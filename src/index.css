@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f5f8ff;
+  color: #0f172a;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  color: #0f172a;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(13, 61, 145, 0.2);
+  color: #0f172a;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  header,
+  footer,
+  button {
+    display: none !important;
+  }
+
+  #certificate {
+    width: 100%;
+    box-shadow: none;
+    border: 8px solid #d4af37;
+    margin: 0;
+  }
+}

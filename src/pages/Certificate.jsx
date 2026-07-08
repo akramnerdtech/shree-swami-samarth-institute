@@ -138,7 +138,7 @@ export default function Certificate() {
             >
               <Download size={18} />
               Download PDF
-            </button> */}
+            </button> */} 
           </div>
 
           <div ref={certificateRef}>

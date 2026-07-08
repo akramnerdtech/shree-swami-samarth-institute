@@ -166,9 +166,21 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-linear-to-r from-[#0a4cbd] to-[#1556bf] text-slate-100">
-        <section className="relative overflow-hidden bg-linear-to-r from-[#0B3D91] to-[#1556bf] px-6 py-24 sm:py-28 lg:px-8">
-          <div className="absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.14),transparent_45%)]" />
+ <main
+  className=" text-white "
+  style={{
+    backgroundImage: `
+    
+      url(${hero})
+    `,
+  
+    
+  }}
+>
+        <section className="relative overflow-hidden  px-6 py-24 sm:py-28 lg:px-8 inset-0;" style={{
+    background: "linear-gradient(180deg, #0f172a8c, #1e3a8aa6)",
+  }}>
+          <div className="absolute inset-x-0 top-0 "  />
           <div className="relative mx-auto max-w-7xl grid gap-12 lg:grid-cols-[0.95fr_1.05fr] items-center">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#F1D49D]">Authentic Wellness Education</p>
@@ -188,16 +200,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="relative">
-              <div className="overflow-hidden rounded-4xl border border-white/10 bg-slate-800/80 shadow-2xl shadow-slate-950/40">
-                <img src={hero} alt="Institute campus" className="h-130 w-full object-cover object-center" />
-                <div className="absolute left-6 bottom-6 right-6 rounded-4xl border border-white/20 bg-slate-950/70 p-6 backdrop-blur-sm">
-                  <p className="text-sm uppercase tracking-[0.3em] text-[#F1D49D]">Campus Highlights</p>
-                  <h2 className="mt-3 text-2xl font-semibold text-white">A serene campus for disciplined learning</h2>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">Modern lecture halls, wellness studios and verification labs support every step of your professional journey.</p>
-                </div>
-              </div>
-            </motion.div>
+       
           </div>
         </section>
 

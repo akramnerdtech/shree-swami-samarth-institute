@@ -117,6 +117,7 @@ export default function Certificate() {
       );
     }
   };
+  
 
   return (
     <>
@@ -125,13 +126,13 @@ export default function Certificate() {
         <div className="max-w-7xl mx-auto px-5">
           {/* Buttons */}
           <div className="flex justify-end gap-4 mb-8 print:hidden">
-            <button
+            {/* <button
               onClick={handlePrint}
               className="flex items-center gap-2 bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800"
             >
               <Printer size={18} />
               Print
-            </button>
+            </button> */}
             {/* <button
               onClick={handleDownload}
               className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"
